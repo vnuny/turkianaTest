@@ -1,0 +1,124 @@
+.slidersContainer{
+    width: 100%;
+    height: fit-content;
+    .slider1{
+      min-width: 100%;
+      overflow-x: hidden;
+      display: flex;
+      // flex-wrap:wrap;
+      .imageContainer {
+        // min-width: 200px;
+        // max-height: 200px;
+        // min-height: 200px;
+        width: 250px;
+        min-width: 250px;
+        height: 250px;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 5px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .slider2{
+      min-width: 100%;
+      overflow-x: hidden;
+      display: flex;
+      // flex-wrap:wrap;
+      .imageContainer {
+        max-height: 250px;
+        min-width: 250px;
+        min-height: 250px;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 5px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+@media screen and  (min-width:320px) and (max-width:480px){
+  .slidersContainer{
+    .slider1{
+      .imageContainer {
+        max-height: 150px;
+        min-width: 150px;
+        min-height: 150px;
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 5px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .slider2{
+      .imageContainer {
+        max-height: 150px;
+        min-width: 150px;
+        min-height: 150px;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 5px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+    .header{
+        padding: 10px 30px;
+        .logo{
+            img{
+                max-width: 130px;
+            }
+        }
+        .navigation{
+            display: none;
+        }
+        .hamburger{
+            display: block;
+        }
+    }
+    .list{
+        display: block;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .header{
+        .list{
+            height: 0 !important;
+        }
+    }
+    
+}
+@media screen and (min-width:1025px) and (max-width:1200px){
+    .header{
+        .list{
+            height: 0 !important;
+        }
+    }
+}
